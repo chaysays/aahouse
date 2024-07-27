@@ -30,6 +30,7 @@
         <div class="rsvp-options">
                 <p class="details">RSVP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No of Guests</p>
                 <div class="form1">
+                    <form id="rsvpForm">
                     <label class="details">
                         <input type="radio" name="attendance" value="yes" required> Yes
                     </label>
@@ -40,8 +41,9 @@
                         <input type="radio" name="attendance" value="maybe" required> Maybe
                     </label>
                     <input style="margin-left: 50px;" class="details" maxlength="1" size="1" type="text" id="num" name="num" required>
+                    <button type="submit">RSVP</button>
+                    </form>
                 </div>
-                <button type="submit">RSVP</button>
         </div>
     </div>
     <script src="house.js"></script>
