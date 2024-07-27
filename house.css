@@ -15,7 +15,7 @@ body {
 .envelope {
     position: relative;
     width: 400px;
-    height: 300px;
+    height: 220px;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
