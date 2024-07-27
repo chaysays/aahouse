@@ -154,3 +154,10 @@ button:hover {
     color: #333;
     font-weight: bold;
 }
+
+.details {
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0;
+}
