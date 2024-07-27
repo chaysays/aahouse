@@ -162,7 +162,3 @@ button:hover {
     margin: 10px 0;
     animation: fadeIn 1s forwards 1s;
 }
-
-.form1 {
-    display: inline-flex;
-}
