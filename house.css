@@ -153,6 +153,8 @@ button:hover {
 
 .rsvp-options {
     margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 2s; /* Same fadeIn effect with a delay */
 }
 
 .rsvp-options .details {
