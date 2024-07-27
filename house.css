@@ -164,3 +164,7 @@ button:hover {
     transform: translateY(-100%);
     animation: fadeIn 1s forwards 1s;
 }
+
+.form1 {
+    display: inline-flex;
+}
