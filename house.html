@@ -19,7 +19,6 @@
     </div>
     <div class="greeting-card" id="greetingCard">
         <div class="greeting-card-content">
-            <!-- Add this inside the .greeting-card-content div in your existing index.html -->
             <img src="property.png" alt="House Icon">
             <p>Hello <span id="guestName"></span>, you are invited!</p><br>
             <p class="info">We are thrilled to invite you to our housewarming ceremony.</p><br>
@@ -28,20 +27,25 @@
             <p class="details">Place: <span id="eventPlace"></span></p><br>
         </div>
         <div class="rsvp-options">
-                <p class="details">RSVP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No of Guests</p>
-                <form id="rsvpForm1">
-                <label class="details">
-                    <input type="radio" name="attendance" value="yes" required> Yes
-                </label>
-                <label class="details">
-                    <input type="radio" name="attendance" value="no" required> No
-                </label>
-                <label class="details">
-                    <input type="radio" name="attendance" value="maybe" required> Maybe
-                </label>
-                <input style="margin-left: 50px;" class="details" maxlength="1" size="1" type="text" id="num" name="num" required>
+            <form id="rsvpForm1">
+                <div class="details">
+                    <label>RSVP:</label>
+                    <label>
+                        <input type="radio" name="attendance" value="yes" required> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="attendance" value="no" required> No
+                    </label>
+                    <label>
+                        <input type="radio" name="attendance" value="maybe" required> Maybe
+                    </label>
+                </div>
+                <div class="details">
+                    <label>No of Guests:</label>
+                    <input type="text" id="num" name="num" maxlength="1" size="1" required>
+                </div>
                 <button type="submit">RSVP</button>
-                </form>
+            </form>
         </div>
     </div>
     <script src="house.js"></script>
