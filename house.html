@@ -13,7 +13,7 @@
             <h1>Housewarming Ceremony RSVP</h1>
             <form id="rsvpForm">
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <button type="submit">RSVP</button>
+                <button type="submit">Next</button>
             </form>
         </div>
     </div>
@@ -28,7 +28,7 @@
             <p class="details">Place: <span id="eventPlace"></span></p><br>
         </div>
         <div class="rsvp-options">
-                <p class="details">RSVP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No of Guests</p>
+                <p class="details">RSVP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No of Guests</p>
                 <div class="form1">
                     <label class="details">
                         <input type="radio" name="attendance" value="yes" required> Yes
@@ -39,8 +39,9 @@
                     <label class="details">
                         <input type="radio" name="attendance" value="maybe" required> Maybe
                     </label>
-                    <input class="details" maxlength="1" size="1" type="text" id="num" name="num" required>
+                    <input style="margin-left: 50px;" class="details" maxlength="1" size="1" type="text" id="num" name="num" required>
                 </div>
+                <button type="submit">RSVP</button>
         </div>
     </div>
     <script src="house.js"></script>
