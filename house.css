@@ -160,5 +160,7 @@ button:hover {
     font-size: 22px;
     color: #333;
     margin: 10px 0;
+    overflow: hidden;
+    transform: translateY(-100%);
     animation: fadeIn 1s forwards 1s;
 }
