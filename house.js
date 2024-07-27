@@ -19,7 +19,5 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     document.getElementById('eventTime').innerText = "5:00 PM";
     document.getElementById('eventPlace').innerText = "1234 Elm Street, Springfield";
 
-    const greetingMessage = `Hello ${name}, you are invited!`;
-    document.getElementById('greetingMessage').innerText = greetingMessage;
 });
 
