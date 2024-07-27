@@ -1,4 +1,3 @@
-/* Add this to your existing styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -27,14 +26,15 @@ body {
 .greeting-card {
     text-align: center;
     position: relative;
-    width: 30%;
-    height: 80%;
+    width: 400px;
+    height: auto;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    transform: translateY(-100%);
-    animation: slideIn 1s forwards 1s;
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 @keyframes slideIn {
@@ -117,10 +117,6 @@ button:hover {
     font-size: 14px;
 }
 
-.greeting-card {
-    display: none;
-}
-
 .greeting-card-content img {
     width: 80px;
     margin-bottom: 20px;
@@ -155,10 +151,20 @@ button:hover {
     font-weight: bold;
 }
 
-.details {
+.rsvp-options {
+    margin-top: 20px;
+}
+
+.rsvp-options .details {
     font-family: 'Dancing Script', cursive;
-    font-size: 22px;
+    font-size: 18px;
     color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 10px 0;
-    animation: fadeIn 1s forwards 1s;
+}
+
+.rsvp-options .details label, .rsvp-options .details input {
+    margin-left: 10px;
 }
