@@ -11,10 +11,22 @@ body {
     margin: 0;
 }
 
-.envelope, .greeting-card {
+.envelope {
     position: relative;
     width: 350px;
     height: 250px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform: translateY(-100%);
+    animation: slideIn 1s forwards 1s;
+}
+
+.greeting-card {
+    position: relative;
+    width: 50%;
+    height: 80%;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
