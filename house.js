@@ -40,7 +40,7 @@ document.getElementById('rsvpForm1').addEventListener('submit', function(event) 
     var templateParams = {
         guest_name: name,
         guest_count: numGuests,
-        guest_response: attendance,
+        guest_response: attendance
     };
     
     emailjs.send('service_t6olu3k', 'template_2njaiuq', templateParams).then(
