@@ -19,6 +19,7 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     document.getElementById('eventPlace').innerText = "3987 Trailway Commons Cir, Auburn Hills, MI 48326";
 });
 
+
 document.getElementById('rsvpForm1').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -31,5 +32,16 @@ document.getElementById('rsvpForm1').addEventListener('submit', function(event) 
         return;
     }
 
-    alert(`Thank you, ${name}! You have selected "${attendance}" with ${numGuests} guests.`);
+    // Send email using EmailJS
+    emailjs.send('service_t6olu3k', 'template_2njaiuq', {
+        guest_name: name,
+        guest_count: numGuests,
+        guest_response: attendance
+    }).then(function(response) {
+        alert(`Thank you, ${name}! Your RSVP has been sent successfully.`);
+    }, function(error) {
+        alert(`Failed to send RSVP. Please try again.`);
+    });
 });
+
+
