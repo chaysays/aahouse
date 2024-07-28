@@ -25,9 +25,9 @@ document.getElementById('rsvpForm1').addEventListener('submit', function(event) 
 
     const name = document.getElementById('guestName').innerText;
     const attendance = document.querySelector('input[name="attendance"]:checked').value;
-    const numGuests = document.getElementById('num').value;
+    const numGuests = attendance === 'yes' || attendance === 'maybe' ? document.getElementById('num').value : '0';
 
-    if (!attendance || !numGuests) {
+    if (!attendance) {
         alert("Please complete the RSVP.");
         return;
     }
@@ -53,6 +53,18 @@ document.getElementById('rsvpForm1').addEventListener('submit', function(event) 
     );
 
     
+});
+
+document.querySelectorAll('input[name="attendance"]').forEach((radio) => {
+    radio.addEventListener('change', function() {
+        const guestCountInput = document.getElementById('num');
+        if (this.value === 'no') {
+            guestCountInput.value = '';
+            guestCountInput.disabled = true;
+        } else {
+            guestCountInput.disabled = false;
+        }
+    });
 });
 
 
