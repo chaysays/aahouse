@@ -45,10 +45,10 @@ document.getElementById('rsvpForm1').addEventListener('submit', function(event) 
     
     emailjs.send('service_t6olu3k', 'template_2njaiuq', templateParams).then(
       (response) => {
-        console.log('SUCCESS!', response.status, response.text);
+        alert("Thank you for your RSVP. Your RSVP is successfully sent.");
       },
       (error) => {
-        console.log('FAILED...', error);
+        alert("Please try again later or contact the homeowners immediately!");
       },
     );
 
