@@ -27,15 +27,14 @@ body {
     text-align: center;
     position: relative;
     width: 400px;
-    height: auto;
+    height: 90vh;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: none;
     padding: 20px;
-    margin-top: 20px;
-    animation: slideIn 1s forwards 1s;
+    animation: slideIn 1s forwards 2s;
 }
 
 @keyframes slideIn {
@@ -119,8 +118,7 @@ button:hover {
 }
 
 .greeting-card-content img {
-    width: 80px;
-    margin-bottom: 20px;
+    width: 45px;
     animation: bounce 2s infinite;
 }
 
