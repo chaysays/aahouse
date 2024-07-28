@@ -34,7 +34,7 @@ body {
     overflow: hidden;
     display: none;
     padding: 20px;
-    animation: slideIn 1s forwards 2s;
+    animation: slideIn 1s forwards 1s;
 }
 
 @keyframes slideIn {
@@ -153,7 +153,7 @@ button:hover {
 .rsvp-options {
     margin-top: 20px;
     opacity: 0;
-    animation: fadeIn 1s forwards 2s; /* Same fadeIn effect with a delay */
+    animation: fadeIn 1s forwards 1s; /* Same fadeIn effect with a delay */
 }
 
 .rsvp-options .details {
