@@ -32,6 +32,10 @@ document.getElementById('rsvpForm1').addEventListener('submit', function(event) 
         return;
     }
 
+    emailjs.init({
+      publicKey: 'XdF_LEk7SXz7ZuIyq',
+    });
+
 
     var templateParams = {
         guest_name: name,
