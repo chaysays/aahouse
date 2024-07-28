@@ -32,16 +32,23 @@ document.getElementById('rsvpForm1').addEventListener('submit', function(event) 
         return;
     }
 
-    // Send email using EmailJS
-    emailjs.send('service_t6olu3k', 'template_2njaiuq', {
+
+    var templateParams = {
         guest_name: name,
         guest_count: numGuests,
-        guest_response: attendance
-    }).then(function(response) {
-        alert(`Thank you, ${name}! Your RSVP has been sent successfully.`);
-    }, function(error) {
-        alert(`Failed to send RSVP. Please try again.`);
-    });
+        guest_response: attendance,
+    };
+    
+    emailjs.send('service_t6olu3k', 'template_2njaiuq', templateParams).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      (error) => {
+        console.log('FAILED...', error);
+      },
+    );
+
+    
 });
 
 
