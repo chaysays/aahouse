@@ -14,8 +14,6 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     greetingCard.style.animation = 'slideIn 1s forwards';
     
     document.getElementById('guestName').innerText = name;
-    document.getElementById('eventDate').innerText = "August 24, 2024";
-    document.getElementById('eventTime').innerText = "9:00 AM";
     document.getElementById('eventPlace').innerText = "3987 Trailway Commons Cir, Auburn Hills, MI 48326";
 });
 
