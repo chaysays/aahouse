@@ -172,10 +172,13 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
+    flex-wrap: wrap; /* Allows wrapping if the screen is too small */
 }
 
 .rsvp-options .details label, .rsvp-options .details input {
     margin-left: 10px;
+    margin-top: 0; /* Ensure no top margin */
+    flex: 1 1 auto; /* Makes items flexible */
 }
 
 /* Responsive adjustments */
@@ -258,5 +261,22 @@ button {
     button {
         padding: 12px;
         font-size: 16px;
+    }
+}
+
+
+/* Make sure the labels and input align properly on smaller screens */
+@media (max-width: 480px) {
+    .rsvp-options .details {
+        justify-content: flex-start;
+    }
+
+    .rsvp-options .details label {
+        margin-left: 0;
+        margin-right: 15px; /* Add space between radio buttons */
+    }
+
+    .rsvp-options .details input {
+        width: 40px; /* Set a fixed width for the guest input */
     }
 }
