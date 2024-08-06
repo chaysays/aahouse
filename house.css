@@ -9,11 +9,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: auto; /* Allow scrolling on smaller screens */
 }
 
 .envelope {
     position: relative;
-    width: 400px;
+    width: 90%; /* Make the envelope responsive */
+    max-width: 400px;
     height: 220px;
     background: #fff;
     border-radius: 15px;
@@ -26,8 +28,9 @@ body {
 .greeting-card {
     text-align: center;
     position: relative;
-    width: 400px;
-    height: 90vh;
+    width: 90%; /* Make the card responsive */
+    max-width: 400px;
+    height: auto; /* Let the height adjust based on content */
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -35,6 +38,7 @@ body {
     display: none;
     padding: 20px;
     animation: slideIn 1s forwards 1s;
+    margin-bottom: 20px; /* Add some space at the bottom */
 }
 
 @keyframes slideIn {
@@ -174,4 +178,33 @@ button:hover {
 
 .rsvp-options .details label, .rsvp-options .details input {
     margin-left: 10px;
+}
+
+/* New media query for smaller screens */
+@media (max-width: 600px) {
+    .greeting-card {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .greeting-card-content p,
+    .greeting-card-content .info,
+    .greeting-card-content .details {
+        font-size: 16px;
+    }
+
+    .rsvp-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .rsvp-options .details {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .rsvp-options .details label {
+        margin-left: 0;
+        margin-right: 20px;
+    }
 }
