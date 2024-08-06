@@ -9,8 +9,6 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 .envelope {
@@ -152,14 +150,14 @@ button:hover {
     font-weight: bold;
 }
 
-.greeting-card-content .details img {
-    width: 16px;
+.greeting-card-content .details .icon {
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
     vertical-align: middle;
 }
 
 .rsvp-options {
-    margin-top: 20px;
     opacity: 0;
     animation: fadeIn 1s forwards 1s; /* Same fadeIn effect with a delay */
 }
@@ -172,111 +170,8 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
-    flex-wrap: wrap; /* Allows wrapping if the screen is too small */
 }
 
 .rsvp-options .details label, .rsvp-options .details input {
     margin-left: 10px;
-    margin-top: 0; /* Ensure no top margin */
-    flex: 1 1 auto; /* Makes items flexible */
-}
-
-/* Responsive adjustments */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Adjust the size of the greeting card for smaller screens */
-.greeting-card {
-    width: 90%;
-    height: auto;
-    max-width: 400px;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-/* Ensure the RSVP options are also responsive */
-.rsvp-options .details {
-    font-size: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.rsvp-options .details label, .rsvp-options .details input {
-    margin-left: 0;
-    margin-top: 10px;
-}
-
-/* Adjust the button size and margin for mobile screens */
-button {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-}
-
-@media (max-width: 768px) {
-    .envelope {
-        width: 100%;
-        height: auto;
-    }
-
-    .greeting-card {
-        width: 100%;
-        height: auto;
-        padding: 15px;
-    }
-
-    .greeting-card-content img {
-        width: 60px;
-    }
-
-    .greeting-card-content p {
-        font-size: 18px;
-    }
-
-    .rsvp-options .details {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .greeting-card-content img {
-        width: 50px;
-    }
-
-    .greeting-card-content p {
-        font-size: 16px;
-    }
-
-    .rsvp-options .details {
-        font-size: 14px;
-    }
-
-    button {
-        padding: 12px;
-        font-size: 16px;
-    }
-}
-
-
-/* Make sure the labels and input align properly on smaller screens */
-@media (max-width: 480px) {
-    .rsvp-options .details {
-        justify-content: flex-start;
-    }
-
-    .rsvp-options .details label {
-        margin-left: 0;
-        margin-right: 15px; /* Add space between radio buttons */
-    }
-
-    .rsvp-options .details input {
-        width: 40px; /* Set a fixed width for the guest input */
-    }
 }
